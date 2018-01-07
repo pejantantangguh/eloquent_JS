@@ -253,3 +253,57 @@ console.log(power(4, 3));
 
   printFarmInventory(7, 16, 3);
 }
+
+{
+  function min(a,b){
+  if(a < b)
+    return a;
+  else
+    return b;
+}
+
+console.log(min(0,10));
+console.log(min(0, -10));
+}
+
+{
+function isEven(a){
+  if(a%2 == 0)
+    return true;
+  else
+    return false;
+}
+
+console.log(isEven(51));
+}
+
+{
+  function isEven(n) {
+  if (n == 0)
+    return true;
+  else if (n == 1)
+    return false;
+  else if (n < 0)
+    return isEven(-n);
+  else
+    return isEven(n - 2);
+}
+
+console.log(isEven(-1));
+
+}
+
+// Bean Counting
+function countBs(b){
+  var a = b.toLowerCase();
+  return a.match(/b/g).length;
+}
+
+console.log(countBs("BBC"));
+
+function charAt(x,y){
+  var y = y.toLowerCase();
+  return y.match(/y/g).length;
+}
+
+console.log(charAt("GGGG","G"));
