@@ -293,6 +293,7 @@ console.log(isEven(-1));
 
 }
 
+{
 // Bean Counting
 function countBs(b){
   var a = b.toLowerCase();
@@ -301,9 +302,42 @@ function countBs(b){
 
 console.log(countBs("BBC"));
 
-function charAt(x,y){
-  var y = y.toLowerCase();
-  return y.match(/y/g).length;
+// function charAt(x,y){
+//   var y = y.toLowerCase();
+//   return y.match(/y/g).length;
+// }
+//
+// console.log(charAt("GGGG","G"));
 }
 
-console.log(charAt("GGGG","G"));
+//Joining array objects
+{
+  let mack = [];
+  mack.push("Mack");// Push adding value on array
+  mack.push("The","Knife");
+
+  console.log(mack);
+  console.log(mack.join(" "));
+  console.log(mack.pop()); // Pop remove value dari array terakhir
+  console.log(mack);
+}
+
+{
+  // objects
+  let day1 = {
+    squirrel : false,
+    events : ["work","touched tree","pizza","running","television"]
+  };
+
+  console.log(day1.squirrel);
+  console.log(day1.wolf);
+  day1.wolf = false;
+  console.log(day1.wolf);
+}
+
+{
+  //Array of objects
+  let journal = [
+    {events : ["work",""]}
+  ];
+}
