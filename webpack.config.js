@@ -1,9 +1,12 @@
 module.exports = {
-  entry: ['babel-polyfill', __dirname + '/app/index.js'],
+  entry: {
+    chapter1: ['babel-polyfill', __dirname + '/app/index.js'],
+    chapter2: ['babel-polyfill', __dirname + '/app/home.js']
+  },
   output: {
     path: __dirname + '/build/',
     // if the above line does not work, try `path: __dirname + '/build'`
-    filename: 'bundle.js'
+    filename: '[name].js'
   },
   // NOTE 'Setting up Webpack'
   module: {
