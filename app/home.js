@@ -35,3 +35,5 @@ let link = document.body.getElementsByTagName("a")[0];
 console.log(link.href);
 
 //All element nodes have a getElementsByTagName method, which collects all elements with the given tag name that are descendants (direct or indirect children) of the given node and returns them as an array-like object.
+
+var ostrich = document.getElementsById("gertrude");
