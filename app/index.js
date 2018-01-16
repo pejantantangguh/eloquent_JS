@@ -90,31 +90,6 @@ var power = (base,exponent) => {
 }
 
 console.log(power(2,10));
-// Drawing a mountain with function
-{
-var count = 0;
-const landscape = () => {
-  let result = "";
-  let flat = (size) => {
-    for (count; count < size; count++){
-      result = result + "_";
-    };
-  };
-  let mountain = (size) => {
-    result += "/";
-    for(count = 0; count < size; count++){
-      console.log(count);
-      result += "'";
-    };
-    result +="\\";
-  };
-  flat(5);
-  mountain(3);
-  return result;
-};
-console.log(landscape());
-};
-// Karena variable count sudah di pake di looping yang awal. Kita Harus reset dia punya variable kembali ke "0" biar bisa looping mountain bosa di pakai
 
 //Solution from Book
 {

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>App</title>
+  </head>
+  <body>
+    <!-- add the following div only in the react section -->
+    <h1>Functions Concept</h1>
+    <p>Openn your console log to see MAGIC!</p>
+
+    <p>Defining a function : A function definition is just a regular variable definition where the value given to the variable happens to be a function. <br>
+      Sample of function that has parameter and has got no parameter
+      <em>Check console log : </em>
+    </p>
+
+    <p>Parameter and scopes : <strong>Important property of functions : </strong>
+      Variables that created inside of them are local to the functions!
+    </p>
+
+    <p>Nested Scope : <strong>Things to remember, Functions can be created inside other functions</strong>
+    </p>
+    <em>Check the console log to see the example of <strong>nested functions</strong></em>
+
+    <p>Function as values : Function variables usually simply act as names for a specific piece of the program.</p>
+
+    <p>Declaration Notation : var square = function(){} is equal to function square(){}</p>
+    <p><strong>Do NOT</strong> put function inside a conditional if block
+    Eg : <br>
+      <em>Check console log : </em>
+    </p>
+
+    <p>The Call stack</p>
+    <p>
+      It will be helpful to take a closer look at the way control flows through functions. Here is a simple program that makes a few function calls:
+    </p>
+    <div>
+      function greet(who){ <br>
+        console.log("Hello " + who); <br>
+      }<br>
+      greet("Harry"); <br>
+      console.log("Bye");
+
+    </div>
+
+    <p><strong>Flow of control schematically like this </strong></p>
+
+    <p>
+      A run through this program goes roughly like this: the call to greet causes control to jump to the start of that function (line 2). <br>
+      It calls console.log (a built-in browser function), which takes control, does its job, and then returns control to line 2.  <br>
+      Then it reaches the end of the greet function, so it returns to the place that called it, at line 4. <br>
+      The line after that calls console.log again.
+    </p>
+    <ol>We could show the flow of control schematically like this:
+      <li>top</li>
+      <li>greet</li>
+      <li>console.log</li>
+      <li>greet</li>
+      <li>top</li>
+      <li>console.log</li>
+      <li>top</li>
+    </ol>
+
+    <p>Optional Arguments definitions : JavaScript is extremely broad-minded about the number of arguments you pass to a function.
+      <br> If you pass too many, the extra ones are ignored. If you pass too few, the missing parameters simply get assigned the value undefined.
+    </p>
+
+    <p>Closure : </p>
+
+
+    <script src="chapter3.js" charset="utf-8"></script>
+  </body>
+</html>
