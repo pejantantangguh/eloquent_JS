@@ -474,5 +474,4 @@ console.log(tableFor("lettuce",JOURNAL));
   var correlations = gatherCorrelations(JOURNAL);
   for (var event in correlations)
     console.log(event +": " + correlations[event]);
-
 }

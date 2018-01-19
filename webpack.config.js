@@ -2,7 +2,8 @@ module.exports = {
   entry: {
     chapter1: ['babel-polyfill', __dirname + '/app/index.js'],
     chapter2: ['babel-polyfill', __dirname + '/app/home.js'],
-    chapter3: ['babel-polyfill', __dirname + '/app/ch3function.js']
+    chapter3: ['babel-polyfill', __dirname + '/app/ch3function.js'],
+    chapter4: ['babel-polyfill', __dirname + '/app/ch4DataStructure.js']
   },
   output: {
     path: __dirname + '/build/',

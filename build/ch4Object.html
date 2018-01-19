@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>App</title>
+  </head>
+  <body>
+    <!-- add the following div only in the react section -->
+    <h1>Chapter 4 Data Stuctures: Objects and Arrays</h1>
+
+    <h3>Data Sets</h3>
+    <p>To represent digital data jnto machines memory</p>
+    <p>Data type to storing sequences of values is called Array.</p>
+    <em>Check console log for example of Array</em>
+
+    <h3>Properties</h3>
+    <p> Function to get length of string = myString.length(length to get the length of a string )</p>
+    <p> We cannot access values that have null or undefined properties. </p>
+
+    <h3>Methods</h3>
+    <ul> Sample of method :
+      <li>.toUpperCase()</li>
+      <li>.push() </li>
+      <li>.pop()  </li>
+      <li>.join() </li>
+      <li>.pop()  </li>
+    </ul>
+
+    <h3>Objects</h3>
+    <p> One way to create an object is by using a curly brace notation.</p>
+      <em>Please inspect element to check the sample
+        <script>
+        var day1 = {
+            squirrel: false,
+            events: ["work", "touched tree", "pizza", "running",
+            "television"]
+          };
+        </script>
+      </em>
+
+    <h4> Creating an array of Objects </h4>
+    <p>Array of Objects </p>
+      <em>Inspect element to check array of objects sample</em>
+      <script>
+        var journal = [
+          {
+            events   : ["work", "touched tree","pizza","running","television"],
+            squirrel : false
+          },
+          {
+            events : ["work","ice cream","cauliflower","lasagna","touched tree","brushed teeth"],
+            squirrel : false
+          },
+          {
+            events : ["weekend","cycling","break","peanuts","beer"],
+            squirrel : true
+          },
+        ];
+      </script>
+
+    <h3>Mutability</h3>
+    <p>
+    We’ve seen that object values can be modified.
+    The types of values discussed in earlier chapters,
+    such as numbers, strings, and Booleans, are all immutable—
+    it is impossible to change an existing value of those types.
+    You can combine them and derive new values from them,
+    but when you take a specific string value,
+    that value will always remain the same.
+    The text inside it cannot be changed.
+    If you have reference to a string that contains "cat",
+    it is not possible for other code to change a character in
+    that string to make it spell "rat".
+    </p>
+    <br>
+
+    <p>
+      <strong>
+        With objects, on the other hand,
+        the content of a value can be modified by changing its properties.
+      </strong>
+    </p>
+    <br>
+    <em> Sample of objects Mutability, open inspect element </em>
+    <script>
+    var object1 = {value: 10};
+    var object2 = object1;
+    var object3 = {value: 10};
+
+    console.log(object1 == object2);
+    // → true
+    console.log(object1 == object3);
+    // → false
+
+    object1.value = 15;
+    console.log(object2.value);
+    // → 15
+    console.log(object3.value);
+    // → 10
+    </script>
+
+    
+    <script src="chapter4.js" charset="utf-8"></script>
+  </body>
+</html>
