@@ -104,11 +104,52 @@
       Push to add elements, Pop to remove.
     </p>
 
-    <p>Coressponding method for adding and removing things at the start of an array called <i>unshift</i> and <i>shift</i></p>
+    <h4>Coresponding method for adding and removing things at the start of an array called <i>unshift</i> and <i>shift</i></h4>
     <em>Inspect element to see shift and unshift</em>
     <script>
-
+      var todoList = [];
+      function remeberTo(task) {
+        todoList.push(task);
+      }
+      function whatIsNext(){
+        return todoList.shift();
+      }
+      function urgentlyRememberTo(task){
+        todoList.unshift(task);
+      }
     </script>
+
+    <h4>Explanation of the script</h4>
+    <p>Previous program manages list of tasks. You add tasks to the end of the list by calling <i>rememberto("eat")</i>, and when you're ready to do something, you call <i>whatIsNext()</i> to get and remove the front item from the list. <br>
+    The <i>urgentlyRememberTo</i> function also adds a task but adds it to the front instead of the back of the list.
+    </p>
+
+    <h4>Index Of</h4>
+    <p>The indexOf method has a sibling called lastIndexOf, which starts searching for the given element at the end of the array instead of the front.</p>
+
+    <p>
+      Both indexOf and lastIndexOf take an optional second argument that indicates where to start searching from.
+    </p>
+    <script>
+    console.log([1,2,3,2,1].indexOf(2));
+    //1
+    console.log([1,2,3,2,1].lastIndexOf(2));
+    //3
+    </script>
+
+    <h4>Slice</h4>
+    <p>
+      Slice, takes a start index and an end index and returns an array that has only the elements between those indices.<br>
+      The start index is inclusive and the end index exclusive.
+    </p>
+    <em>Open console log to see whats happening</em>
+    <script>
+      console.log([0,1,2,3,4].slice(1,4));
+      // 1,2,3
+      console.log([0,1,2,3,4].slice(2));
+      // 2,3,4
+    </script>
+    <em>When the end index is not given, slice will take all of the elements after the start index</em>
 
     <script src="chapter4.js" charset="utf-8"></script>
   </body>
